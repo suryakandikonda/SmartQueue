@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OpenAccountService"
+    android:background="@drawable/backgradient">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Syndicate Bank"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/ubuntu"/>
+
+        <TextView
+            android:id="@+id/service_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open New Account"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="100dp"
+            android:textSize="30sp"
+            android:fontFamily="@font/ubuntu"/>
+        <TextView
+            android:id="@+id/branch_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Branch name"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/ubuntu"/>
+
+        <TextView
+            android:id="@+id/date_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginTop="240dp"
+            android:fontFamily="@font/ubuntu"
+            android:textStyle="bold"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_rect"
+            android:gravity="center"
+            android:layout_marginTop="280dp"
+            android:elevation="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Counter Number"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/Counter_Head"
+                android:textColor="#1A237E"/>
+            <TextView
+                android:id="@+id/counter_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="---"
+                android:gravity="center"
+                android:fontFamily="@font/ubuntu"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Token Number"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/Token_Head"
+                android:textColor="#1A237E"
+                android:layout_marginTop="60dp"/>
+            <TextView
+                android:id="@+id/token_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="---"
+                android:gravity="center"
+                android:fontFamily="@font/ubuntu"
+                android:layout_marginTop="80dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/waitingTimeView"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your service will be completed in less than:\n18 Minutes"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="450dp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="500dp">
+            <Button
+                android:id="@+id/btn_quit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quit"
+                android:fontFamily="@font/ubuntu"
+                android:background="#d50000"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:onClick="service_quit"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BankAdminPage">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Syndicate Bank"
+        android:gravity="center"
+        android:fontFamily="@font/ubuntu"
+        android:layout_marginTop="40dp"
+        android:textSize="35sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/branch_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Branch name"
+        android:fontFamily="@font/ubuntu"
+        android:layout_marginTop="95dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Mode"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:fontFamily="@font/ubuntu"
+        android:layout_marginTop="130dp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_centerInParent="true">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Service"
+            android:fontFamily="@font/ubuntu"
+            android:layout_marginTop="250dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/service_dropdown_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:gravity="center"
+            android:layout_marginTop="270dp" />
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp">
+            <Button
+                android:id="@+id/btn_quit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:fontFamily="@font/ubuntu"
+                android:background="@color/bankColor"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="40dp"
+                android:onClick="start_admin_service"/>
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/bankColor</item>
+        <item name="colorPrimaryDark">@color/bankColor</item>
+        <item name="colorAccent">@color/bankColor</item>
+    </style>
+
+    <style name="MyTheme" parent="AppTheme">
+        <item name="android:windowBackground">@mipmap/xxhomeback</item>
+
+    </style>
+
+</resources>

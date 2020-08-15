@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BankServicesPage">
+
+
+
+        <com.github.florent37.shapeofview.shapes.ArcView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            app:shape_arc_height="20dp"
+            app:shape_arc_position="bottom">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bankColor"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/ubuntu"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Syndicate Bank"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center"
+                android:layout_marginTop="55dp"
+                android:textSize="40sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/branch_name_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:gravity="center"
+                android:fontFamily="@font/ubuntu"
+                android:text="Getting Branch Name.."
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="40dp"/>
+
+        </com.github.florent37.shapeofview.shapes.ArcView>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please select Service"
+        android:layout_marginTop="220dp"
+        android:gravity="center"
+        android:fontFamily="@font/ubuntu"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/service_rect"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="40dp"
+        android:onClick="openAccountService">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_account"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open New Account"
+            android:gravity="center"
+            android:fontFamily="@font/ubuntu"
+            android:layout_marginTop="30dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/service_rect"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentRight="true"
+        android:onClick="openDepositService">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_deposit"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deposit Amount"
+            android:gravity="center"
+            android:fontFamily="@font/ubuntu"
+            android:layout_marginTop="30dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/service_rect"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="40dp"
+        android:onClick="openWithdrawService">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_withdraw"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Withdraw Amount"
+            android:gravity="center"
+            android:fontFamily="@font/ubuntu"
+            android:layout_marginTop="30dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/service_rect"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentRight="true"
+        android:onClick="openCreditCardService">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_creditcard"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Credit Card"
+            android:gravity="center"
+            android:fontFamily="@font/ubuntu"
+            android:layout_marginTop="30dp"/>
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
+
+</ScrollView>

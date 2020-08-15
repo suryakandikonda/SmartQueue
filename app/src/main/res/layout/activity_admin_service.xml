@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+    tools:context=".AdminService"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Syndicate Bank"
+        android:gravity="center"
+        android:fontFamily="@font/ubuntu"
+        android:layout_marginTop="40dp"
+        android:textSize="35sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/branch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Branch name"
+        android:textStyle="bold"
+        android:fontFamily="@font/ubuntu"
+        android:layout_marginTop="95dp"/>
+
+
+    <TextView
+        android:id="@+id/service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="122dp"
+        android:layout_alignParentRight="true"
+        android:text="Service"
+        android:textStyle="bold"
+        android:fontFamily="@font/ubuntu"/>
+
+    <TextView
+        android:id="@+id/date_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:layout_marginTop="122dp"
+        android:fontFamily="@font/ubuntu"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Counter No:"
+            android:textStyle="bold"
+            android:layout_marginTop="170dp"
+            android:layout_alignParentLeft="true"/>
+
+        <EditText
+            android:id="@+id/counter_no_input"
+            android:layout_width="200dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:gravity="center"
+            android:fontFamily="@font/ubuntu"
+            android:inputType="number"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Counter"
+            android:layout_marginTop="250dp"
+            android:onClick="updateCounter"/>
+
+
+    </RelativeLayout>
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:layout_margin="-10dp"
+        android:layout_marginTop="350dp"
+        app:shape_roundRect_bottomLeftRadius="10dp"
+        app:shape_roundRect_bottomRightRadius="10dp"
+        app:shape_roundRect_topLeftRadius="10dp"
+        app:shape_roundRect_topRightRadius="10dp"
+
+        app:shape_roundRect_borderWidth="2dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/backgradient"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_rect"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:elevation="5dp"
+            android:layout_margin="30dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. of People in Queue"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#1A237E"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="---"
+                android:gravity="center"
+                android:id="@+id/people_in_queue"
+                android:fontFamily="@font/ubuntu"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Token Number"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center"
+                android:textStyle="bold"
+
+                android:textColor="#1A237E"
+                android:layout_marginTop="60dp"/>
+            <TextView
+                android:id="@+id/current_token_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="---"
+                android:gravity="center"
+                android:fontFamily="@font/ubuntu"
+                android:layout_marginTop="80dp"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notify Next"
+                android:layout_marginTop="170dp"
+                android:onClick="notifyNext"
+                android:layout_marginBottom="10dp"/>
+
+        </RelativeLayout>
+
+
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>
